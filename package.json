@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pascalallen/ReactEventDispatcher.git"
+    "url": "git+https://github.com/pascalallen/react-event-dispatcher.git"
   },
   "keywords": [
     "React",
@@ -21,9 +21,9 @@
   "author": "Pascal Allen <pascal.allen88@gmail.com> (https://github.com/pascalallen)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pascalallen/ReactEventDispatcher/issues"
+    "url": "https://github.com/pascalallen/react-event-dispatcher/issues"
   },
-  "homepage": "https://github.com/pascalallen/ReactEventDispatcher#readme",
+  "homepage": "https://github.com/pascalallen/react-event-dispatcher#readme",
   "dependencies": {
     "@react-rxjs/core": "^0.10.3",
     "@react-rxjs/utils": "^0.9.5",
