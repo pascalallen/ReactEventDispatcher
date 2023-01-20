@@ -1,11 +1,10 @@
 import {createSignal} from '@react-rxjs/utils';
 import {merge} from 'rxjs';
 import {v4 as uuid} from 'uuid';
-import {DomainEvents} from '@/domain/constants/DomainEvents';
 
 export type DomainEvent = {
   id?: string;
-  name: DomainEvents;
+  name: string | 'ALL';
   data: {
     [key: string]: unknown;
   };

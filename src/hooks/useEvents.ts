@@ -1,5 +1,4 @@
 import {useEffect, useState} from 'react';
-import {DomainEvents} from '@/domain/constants/DomainEvents';
 import {DomainEvent, eventMap$} from '@/services/event/eventDispatcher';
 
 type EventState = {
@@ -8,7 +7,7 @@ type EventState = {
 
 const initialEventState: EventState = {};
 
-const useEvent = (name: DomainEvents) => {
+const useEvent = (name: string | 'ALL') => {
   const [current, setCurrent] = useState(initialEventState.current);
 
   useEffect(() => {
@@ -16,7 +15,7 @@ const useEvent = (name: DomainEvents) => {
       if (eventData === undefined) {
         return setCurrent(undefined);
       }
-      if ((name === DomainEvents.ALL || name === eventData?.name) && current?.id !== eventData?.id) {
+      if ((name === 'ALL' || name === eventData?.name) && current?.id !== eventData?.id) {
         setCurrent(eventData);
       }
     });
