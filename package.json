@@ -1,0 +1,47 @@
+{
+  "name": "@pascalallen/react-event-dispatcher",
+  "version": "1.0.0",
+  "description": "A simple event dispatcher made for React.",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pascalallen/ReactEventDispatcher.git"
+  },
+  "keywords": [
+    "React",
+    "Event",
+    "Events",
+    "Dispatch",
+    "Dispatcher"
+  ],
+  "author": "Pascal Allen <pascal.allen88@gmail.com> (https://github.com/pascalallen)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pascalallen/ReactEventDispatcher/issues"
+  },
+  "homepage": "https://github.com/pascalallen/ReactEventDispatcher#readme",
+  "dependencies": {
+    "@react-rxjs/core": "^0.10.3",
+    "@react-rxjs/utils": "^0.9.5",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rxjs": "^7.8.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.12",
+    "@types/react": "^18.0.27",
+    "@types/uuid": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint-plugin-react": "^7.32.1",
+    "ts-jest": "^29.0.5"
+  }
+}
