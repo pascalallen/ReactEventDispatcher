@@ -1,5 +1,5 @@
-import {useEffect, useState} from 'react';
-import {DomainEvent, eventMap$} from '@/services/event/eventDispatcher';
+import { useEffect, useState } from 'react';
+import { DomainEvent, eventMap$ } from '@services/event/eventDispatcher';
 
 type EventState = {
   current?: DomainEvent;

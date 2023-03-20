@@ -1,6 +1,6 @@
-import {createSignal} from '@react-rxjs/utils';
-import {merge} from 'rxjs';
-import {v4 as uuid} from 'uuid';
+import { createSignal } from '@react-rxjs/utils';
+import { merge } from 'rxjs';
+import { v4 as uuid } from 'uuid';
 
 export type DomainEvent = {
   id?: string;
