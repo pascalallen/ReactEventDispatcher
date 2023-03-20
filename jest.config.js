@@ -13,7 +13,7 @@ module.exports = {
 
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 
-  transform: {'^.+\\.(ts|tsx)$': 'ts-jest'},
+  transform: { '^.+\\.(ts|tsx)$': 'ts-jest' },
 
   testRegex: '(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
 
@@ -23,7 +23,7 @@ module.exports = {
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1'
+    '^@(.*)$': '<rootDir>/src/$1'
   },
 
   collectCoverage: true,

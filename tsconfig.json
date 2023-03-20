@@ -1,22 +1,39 @@
 {
   "compilerOptions": {
-    "module": "ES2020",
-    "moduleResolution": "node",
-    "baseUrl": "./src/",
-    "paths": {
-      "@/*": ["*"]
-    },
-    "target": "es5",
-    "outDir": "./build/",
-    "jsx": "react",
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "declaration": true,
     "alwaysStrict": true,
     "skipLibCheck": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "pretty": true
-  }
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "src",
+    "outDir": "dist",
+    "target": "ES2020",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "paths": {
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@services/*": [
+        "services/*"
+      ]
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ]
 }

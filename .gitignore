@@ -1,5 +1,15 @@
-/build/
+# vendor
 /node_modules/
+
+# logs
 npm-debug.log
 yarn-error.log
+
+# IDE
 /.idea
+/*.sublime-project
+/*.sublime-workspace
+
+# misc
+dist
+.DS_Store

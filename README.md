@@ -4,10 +4,10 @@ A lightweight event dispatcher for React.
 
 ## Installation
 
-Use the package manager [npm](https://nodejs.org/en/download/) to install @pascalallen/react-event-dispatcher.
+Use the package manager [yarn](https://classic.yarnpkg.com/lang/en/docs/install) to install @pascalallen/react-event-dispatcher.
 
 ```bash
-npm i @pascalallen/react-event-dispatcher
+yarn add @pascalallen/react-event-dispatcher
 ```
 
 ## Usage
@@ -15,25 +15,27 @@ npm i @pascalallen/react-event-dispatcher
 ### Dispatch
 
 ```typescript
-import eventDispatcher from "./eventDispatcher";
+import { DomainEvent, eventDispatcher } from '@pascalallen/react-event-dispatcher';
 
-eventDispatcher.dispatch({
+const event: DomainEvent = {
   name: 'USER_ADDED',
   data: {
-      id: '01GQ7S8624BN2Q2S3HNZH5SGDJ'
+    id: '01GQ7S8624BN2Q2S3HNZH5SGDJ'
   }
-});
+};
+
+eventDispatcher.dispatch(event);
 ```
 
 ### Subscribe
 
 ```typescript
-import {useEffect} from "react";
-import useEvent from "./useEvents";
+import { useEffect } from "react";
+import { DomainEvent, useEvent } from '@pascalallen/react-event-dispatcher';
 
-const userAddedEvent = useEvent('USER_ADDED');
+const userAddedEvent: DomainEvent | undefined = useEvent('USER_ADDED');
 
 useEffect(() => {
-    userAddedEvent?.id && console.log('User added');
+  userAddedEvent?.id && console.log('User added');
 }, [userAddedEvent]);
 ```
